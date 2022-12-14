@@ -37,7 +37,7 @@ jobs:
       - uses: docker/build-push-action@v3
         name: Build and push
         with:
-          context: ./apps/frontend/web
+          context: ./
           file: ./apps/frontend/web/Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_HUB_IMAGE_NAME_FRONT}}:latest
